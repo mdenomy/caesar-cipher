@@ -10,6 +10,13 @@ are not changed
 
 I think a better implementation would be to encrypt all visible ASCII characters, that way it might be a little harder to guess the shift character, especially with common, short words like "a", "I", or "the".  Of course a Caesar cipher is pretty easy to crack with either a brute force or a statistics based approach
 
+## Running the application ##
+To run the application, execute the following command and follow the user prompts
+
+```
+ruby caesar.rb
+```
+
 ## Running Tests ##
 To run the tests, run rake
 
