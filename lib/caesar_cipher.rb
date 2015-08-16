@@ -1,4 +1,4 @@
-class CaesarCypher
+class CaesarCipher
   LOWER_A_ORD = "a".ord
   UPPER_A_ORD = "A".ord
   PATTERN = /[a-zA-Z]/

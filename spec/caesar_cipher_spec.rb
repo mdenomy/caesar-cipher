@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe CaesarCypher do
+describe CaesarCipher do
 
   describe "encryption" do
     before do
-     @cypher = CaesarCypher.new(3)
+     @cypher = CaesarCipher.new(3)
     end
 
     it "shifts alpha characters" do
@@ -27,7 +27,7 @@ describe CaesarCypher do
 
   describe "decryption" do
     before do
-     @cypher = CaesarCypher.new(3)
+     @cypher = CaesarCipher.new(3)
     end
 
     it "shifts alpha characters" do
@@ -48,13 +48,13 @@ describe CaesarCypher do
   end
 
   it "works with larger shifts" do
-    cypher = CaesarCypher.new(54)
+    cypher = CaesarCipher.new(54)
     expect(cypher.encrypt("abcd")).to eq "cdef"
     expect(cypher.decrypt("cdef")).to eq "abcd"
   end
 
   it "works with negative shifts" do
-    cypher = CaesarCypher.new(-2)
+    cypher = CaesarCipher.new(-2)
     expect(cypher.encrypt("abcd")).to eq "yzab"
     expect(cypher.decrypt("yzab")).to eq "abcd"
   end
